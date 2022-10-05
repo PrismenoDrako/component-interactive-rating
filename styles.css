@@ -1,0 +1,139 @@
+:root{
+    --orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --bg-component-top: #252d37;
+    --bg-component-bottom: #171e28;
+    --bg-icon: #262f38;
+    --bg-main: hsl(216, 12%, 8%);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Overpass', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.component{
+    min-width: 350px;
+    aspect-ratio: 1/1;
+}
+
+
+.card, .card-submit{
+    background-color: var(--bg-component);
+    background: linear-gradient(180deg, rgba(37,45,55,1) 0%, rgba(23,30,40,1) 100%);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 413px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1.5rem;
+    color: var(--light-grey);
+    font-size: 15px;
+    gap: 25px;
+    aspect-ratio: 1/1;
+    transition: all 0.8s;
+}
+
+
+.card{
+    justify-content: space-between;
+}
+
+.card-submit{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.result{
+    background-color: var(--bg-icon);
+    color: var(--orange);
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.counter-stars{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-star, .star-count{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-icon);
+    transition: all 0.3s;
+}
+
+.btn-submit{
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--orange);
+    letter-spacing: 0.2rem;
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+/* Estados activos */
+.star-count:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+
+}
+.count-active{
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+@media( min-width: 500px ){
+
+}
